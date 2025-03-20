@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Home, Database, Settings, User, Menu, X } from 'lucide-react';
+import { Home, Database, Settings, User, Menu, X, BarChart } from 'lucide-react';
 import DashboardComponent from './DashboardComponent';
 import SettingsComponent from './SettingsComponent';
 import SourcesComponent from './SourcesComponent';
 import ProfileComponent from './ProfileComponent';
+import CSVDashboardComponent from './CSVDashboardComponent';
 
 function SidebarLayout() {
   const [collapsed, setCollapsed] = useState(false);
@@ -48,6 +49,7 @@ function SidebarLayout() {
         <div className="flex-grow py-4">
           {[
             { id: 'dashboard', label: 'Dashboard', icon: <Home size={20} /> },
+            { id: 'csv-dashboard', label: 'CSV Visualizer', icon: <BarChart size={20} /> },
             { id: 'sources', label: 'Sources', icon: <Database size={20} /> },
             { id: 'settings', label: 'Settings', icon: <Settings size={20} /> }
           ].map(item => (
@@ -102,6 +104,8 @@ function SidebarLayout() {
           switch (activeSection) {
             case 'dashboard':
               return <DashboardComponent theme={newTheme} />;
+            case 'csv-dashboard':
+              return <CSVDashboardComponent />;
             case 'sources':
               return <SourcesComponent />;
             case 'settings':

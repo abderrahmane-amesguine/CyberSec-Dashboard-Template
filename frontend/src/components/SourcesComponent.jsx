@@ -32,7 +32,7 @@ function SourcesComponent() {
             {/* Additional sources content */}
             <div className="mt-6 bg-white p-4 rounded-lg shadow recent-alerts">
                 <h2 className="text-lg font-medium mb-4">Source List</h2>
-                <div class="alerts-list" id="alertsList">
+                <div className="alerts-list" id="alertsList">
                     {/* Source content */}
                 </div>
             </div>
