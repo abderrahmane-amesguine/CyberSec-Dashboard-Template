@@ -12,7 +12,7 @@ function SettingsComponent() {
       <h2 className="text-2xl font-semibold mb-6">Settings</h2>
       
       {/* General Settings */}
-      <div className="bg-white rounded-lg shadow mb-6">
+      <div className="bg-white rounded-lg shadow mb-6 recent-alerts">
         <div className="border-b border-gray-200 px-6 py-4">
           <h3 className="text-lg font-medium">General Settings</h3>
         </div>
@@ -23,7 +23,7 @@ function SettingsComponent() {
               <Globe className="mr-3 text-gray-500" size={20} />
               <div>
                 <p className="font-medium">Language</p>
-                <p className="text-sm text-gray-500">Select your preferred language</p>
+                <p className="text-sm text-gray-500 datetime">Select your preferred language</p>
               </div>
             </div>
             <select 
@@ -44,7 +44,7 @@ function SettingsComponent() {
               <Moon className="mr-3 text-gray-500" size={20} />
               <div>
                 <p className="font-medium">Dark Mode</p>
-                <p className="text-sm text-gray-500">Toggle dark mode on or off</p>
+                <p className="text-sm text-gray-500 datetime">Toggle dark mode on or off</p>
               </div>
             </div>
             <label className="relative inline-flex items-center cursor-pointer">

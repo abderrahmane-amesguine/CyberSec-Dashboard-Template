@@ -53,7 +53,7 @@ const CSVDashboardComponent = () => {
           <ChartsContainer chartsConfig={chartConfigs} />
         </div>
       ) : (
-        <div className="mt-8 bg-white p-6 rounded-lg shadow text-center">
+        <div className="mt-8 bg-white p-6 rounded-lg shadow text-center recent-alerts">
           <p className="text-gray-500">
             Upload a CSV file to see visualizations here, or click "Load Sample Data" to see a demo.
           </p>

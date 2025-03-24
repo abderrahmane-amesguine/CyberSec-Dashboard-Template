@@ -104,10 +104,10 @@ const CSVUploaderComponent = ({ onDataLoaded }) => {
     <div className="max-w-4xl mb-8">
       <h2 className="text-2xl font-semibold mb-6">CSV Data Visualization</h2>
       
-      <div className="bg-white rounded-lg shadow p-6">
+      <div className="bg-white rounded-lg shadow p-6 recent-alerts">
         <div className="mb-6">
-          <h3 className="text-lg font-medium mb-2">Upload CSV File</h3>
-          <p className="text-gray-500 mb-4">
+          <h2 className="text-lg font-medium mb-2">Upload CSV File</h2>
+          <p className="text-gray-500 mb-4 datetime">
             Upload a CSV file to generate visualizations for your security data
           </p>
           
@@ -124,7 +124,7 @@ const CSVUploaderComponent = ({ onDataLoaded }) => {
             </label>
             
             {file && (
-              <span className="text-gray-600">{file.name}</span>
+              <span className="text-gray-600 datetime">{file.name}</span>
             )}
           </div>
           
@@ -138,7 +138,7 @@ const CSVUploaderComponent = ({ onDataLoaded }) => {
         
         {preview.length > 0 && (
           <div className="mb-6">
-            <h3 className="text-lg font-medium mb-2">Preview</h3>
+            <h2 className='p-2'>Preview</h2>
             <div className="overflow-x-auto">
               <table className="min-w-full border-collapse">
                 <thead>
